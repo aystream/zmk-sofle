@@ -29,7 +29,6 @@
 &lt { quick-tap-ms = <200>; };
 
 / {
-
     macros {
         intellij_open_terminal: intellij_open_terminal {
             label = "intellj_open_terminal";
@@ -229,7 +228,7 @@
 &kp TAB        &kp Q      &kp W         &kp E         &kp R      &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I       &kp O            &kp P     &kp BSLH
 &kp LSHFT      &kp A      &kp S         &kp D         &kp F      &kp G          &kp LEFT_ARROW   &kp H      &kp J          &kp K       &kp L            &kp SEMI  &kp APOS
 &kp LG(SPACE)  &kp Z      &kp X         &kp C         &kp V      &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA   &kp DOT          &kp FSLH  &kp ENTER
-               &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 1 ENTER    &kp ENTER        &lt 4 ESC  &kp BACKSPACE  &kp DELETE  &kp RIGHT_SHIFT  &mo 2
+               &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 1 ENTER    &kp ENTER        &lt 3 ESC  &kp BACKSPACE  &kp DELETE  &kp RIGHT_SHIFT  &mo 2
             >;
 
             display-name = "LAYER0";
@@ -257,23 +256,13 @@
             >;
         };
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         IDEA {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &open_find_files  &trans  &kp F17
-&trans  &intellij_open_terminal  &rectangle_left_half  &rectangle_right_half  &intellij_rename  &intellij_debug            &trans  &intellij_run  &go_back  &go_forward  &trans            &trans  &kp F18
-&trans  &trans  &trans  &trans  &trans  &switch_windows            &trans  &kp F16        &kp F23  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &trans            &trans  &trans
+&trans  &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &open_find_files  &trans  &kp F17
+&trans  &intellij_open_terminal  &rectangle_left_half  &rectangle_right_half  &intellij_rename  &intellij_debug    &trans  &intellij_run  &go_back  &go_forward  &trans            &trans  &kp F18
+&trans  &trans                   &trans                &trans                 &trans            &switch_windows    &trans  &kp F16        &kp F23   &trans       &trans            &trans  &trans
+        &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &trans            &trans
             >;
         };
     };
