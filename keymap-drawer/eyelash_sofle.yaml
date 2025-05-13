@@ -232,7 +232,7 @@ layers:
   - '&intellij_run'
   - '&go_back'
   - '&go_forward'
-  - '&open_find_files'
+  - '&find_in_files'
   - {t: '$$mdi:transfer$$', type: trans}
   - F18
   - {t: '$$mdi:transfer$$', type: trans}
