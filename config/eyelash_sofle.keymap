@@ -153,6 +153,13 @@
             bindings = <&kp LG(LS(O))>;
             label = "OPEN_FIND_FILES";
         };
+
+        find_in_files: find_in_files {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(F))>;
+            label = "FIND_IN_FILES";
+        };
     };
 
     combos {
@@ -260,7 +267,7 @@
             bindings = <
 &trans      &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &trans            &trans  &trans
 &trans      &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &open_find_files  &trans  &kp F17
-&trans      &intellij_open_terminal  &rectangle_left_half  &rectangle_right_half  &intellij_rename  &intellij_debug    &trans  &intellij_run  &go_back  &go_forward  &trans            &trans  &kp F18
+&trans      &intellij_open_terminal  &rectangle_left_half  &rectangle_right_half  &intellij_rename  &intellij_debug    &trans  &intellij_run  &go_back  &go_forward  &open_find_files  &trans  &kp F18
 &trans      &trans                   &trans                &trans                 &trans            &switch_windows    &trans  &kp F16        &kp F23   &trans       &trans            &trans  &trans
 &kp C_MUTE  &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &trans            &trans
             >;
