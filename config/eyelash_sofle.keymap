@@ -227,6 +227,11 @@
             bindings = <&kp PIPE>;
             key-positions = <22 23>;
         };
+
+        MinusSign {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
