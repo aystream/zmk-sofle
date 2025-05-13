@@ -157,7 +157,14 @@
         find_in_files: find_in_files {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(F))>;
+            bindings =
+                <&macro_press>,
+                <&kp LCMD &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LCMD &kp LEFT_SHIFT>;
+
             label = "FIND_IN_FILES";
         };
     };
