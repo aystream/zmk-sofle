@@ -239,11 +239,11 @@
 
         layer0 {
             bindings = <
-&kp LGUI       &kp N1     &kp N2        &kp N3        &kp N4                &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8      &kp N9           &kp N0    &kp BSLH
-&kp TAB        &kp Q      &kp W         &kp E         &kp R                 &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I       &kp O            &kp P     &kp LEFT_BRACKET
-&kp LSHFT      &kp A      &kp S         &kp D         &kp F                 &kp G          &kp LEFT_ARROW   &kp H      &kp J          &kp K       &kp L            &kp SEMI  &kp APOS
-&kp LC(SPACE)  &kp Z      &kp X         &kp C         &kp V                 &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA   &kp DOT          &kp FSLH  &kp ENTER
-&kp C_MUTE     &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp ENTER        &lt 3 ESC  &kp BACKSPACE  &kp DELETE  &kp RIGHT_SHIFT  &mo 2
+&kp LGUI       &kp N1     &kp N2        &kp N3        &kp N4                &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8        &kp N9           &kp N0    &kp BSLH
+&kp TAB        &kp Q      &kp W         &kp E         &kp R                 &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I         &kp O            &kp P     &kp LEFT_BRACKET
+&kp LSHFT      &kp A      &kp S         &kp D         &kp F                 &kp G          &kp LEFT_ARROW   &kp H      &kp J          &kp K         &kp L            &kp SEMI  &kp APOS
+&kp LC(SPACE)  &kp Z      &kp X         &kp C         &kp V                 &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA     &kp DOT          &kp FSLH  &kp ENTER
+&kp C_MUTE     &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp ENTER        &lt 3 ESC  &kp BACKSPACE  &lt 4 DELETE  &kp RIGHT_SHIFT  &mo 2
             >;
 
             display-name = "LAYER0";
@@ -261,7 +261,7 @@
             display-name = "layer1";
         };
 
-        layer_2 {
+        Setting {
             bindings = <
 &kp TILDE   &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
 &trans      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
@@ -278,6 +278,16 @@
 &trans      &intellij_open_terminal  &rectangle_left_half  &rectangle_right_half  &intellij_rename  &intellij_debug    &trans  &intellij_run  &go_back  &go_forward  &find_in_files    &trans  &kp F18
 &trans      &trans                   &trans                &trans                 &trans            &switch_windows    &trans  &kp F16        &kp F23   &trans       &trans            &trans  &trans
 &kp C_MUTE  &trans                   &trans                &trans                 &trans            &trans             &trans  &trans         &trans    &trans       &trans            &trans
+            >;
+        };
+
+        Navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans    &trans               &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOLUME_UP    &kp HOME  &kp C_VOICE_COMMAND  &kp PAGE_UP      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_MUTE         &kp LEFT  &kp UP_ARROW         &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &kp END   &kp DOWN_ARROW       &kp PAGE_DOWN    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans    &trans               &trans           &trans
             >;
         };
     };
